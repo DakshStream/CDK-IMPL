@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { A11yModule } from '@angular/cdk/a11y';
 import { CdkAccordionModule } from "@angular/cdk/accordion";
+import { BidiModule } from "@angular/cdk/bidi";
+import { ClipboardModule } from "@angular/cdk/clipboard";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CdkAccordionModule } from "@angular/cdk/accordion";
     BrowserModule,
     AppRoutingModule,
     A11yModule,
-    CdkAccordionModule
+    CdkAccordionModule,
+    BidiModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -42,5 +42,7 @@
       </div>
 
   </cdk-accordion-item>
+  <div> {{title}} </div>
+  <button [cdkCopyToClipboard]="title" [cdkCopyToClipboardAttempts]="4" (cdkCopyToClipboardCopied)="onCop($event)">Copy</button>
 
 </cdk-accordion>

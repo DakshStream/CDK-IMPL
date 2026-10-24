@@ -15,4 +15,9 @@ export class AppComponent {
   playsound() {
     this.liveA.announce('Played');
   }
+
+  onCop(e: any) {
+    console.log(e);
+    
+  }
 }
