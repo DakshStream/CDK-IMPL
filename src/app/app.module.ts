@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { A11yModule } from '@angular/cdk/a11y';
+import { CdkAccordionModule } from "@angular/cdk/accordion";
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    A11yModule,
+    CdkAccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

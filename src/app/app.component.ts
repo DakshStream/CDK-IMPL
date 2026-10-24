@@ -1,3 +1,4 @@
+import { LiveAnnouncer } from '@angular/cdk/a11y';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularCDK';
+
+  constructor(private liveA: LiveAnnouncer) {
+
+  }
+  playsound() {
+    this.liveA.announce('Played');
+  }
 }
