@@ -18,6 +18,7 @@ export class AppComponent {
 
   onCop(e: any) {
     console.log(e);
+    console.log("Button was clicked");
     
   }
 }
